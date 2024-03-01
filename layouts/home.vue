@@ -35,9 +35,19 @@
       right
       permanent
     >
-      <v-card>
-        Whats happening
-      </v-card>
+      <v-row align="center" justify="center" class="pa-2 ma-2">
+        <v-text-field
+          v-model="searchTwitter"
+          filled
+          rounded
+          hide-details
+          prepend-inner-icon="mdi-magnify"
+          aria-placeholder="Search Twitter"
+        />
+      </v-row>
+      <v-row align="center" justify="center">
+        <ui-happening />
+      </v-row>
       <v-card>
         Who to follow
       </v-card>
@@ -84,5 +94,10 @@ export default {
 .textBtn {
   color: white!important;
   text-transform:none!important
+}
+
+.btnSearch{
+  background-color: #EBEEF0;
+  border-radius: 15px;
 }
 </style>

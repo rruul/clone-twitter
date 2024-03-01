@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Canada Solicita VISA",
+        "date": "today",
+        "description": "A partir del 29 de febrero Canada solicita Visa para visitar el pais",
+        "img": "https://picsum.photos/id/0/400"
+    },
+    {
+        "title": "Silvia Pinal Enferma",
+        "date": "today",
+        "description": "Se reporta grave Silvia Pinal y es noticia",
+        "img": "https://picsum.photos/id/10/400"
+    },
+    {
+        "title": "Trafico en exceso Irapuato - Salamanca",
+        "date": "today",
+        "description": "Varios estudiantes estuvieron por varias horas atrapados en el trafico entre Irapuato y Salamanca",
+        "img": "https://picsum.photos/id/20/400"
+    }
+]
