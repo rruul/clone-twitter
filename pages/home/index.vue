@@ -1,10 +1,11 @@
 <template>
-  <ui-login />
+  <div>
+
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
-  layout: 'login'
+  layout: 'home'
 }
 </script>
