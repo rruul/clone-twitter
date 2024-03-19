@@ -1,0 +1,31 @@
+[
+    {
+        "tweet_id":"1769386591137448243",
+        "creation_date":"Sun Mar 17 15:33:31 +0000 2024",
+        "text":"Guess the model: &gt; Prompt: Describe the image in the most detailed way possible &gt; Answer: The image shows a young child sitting in a high chair in a kitchen setting. The child is wearing a striped top and has a cheerful expression, with their hands resting on the high chair's… https://t.co/p4A0B6IC52",
+        "user_id":"96479162",
+        "username":"omarmhaimdat",
+        "name":"Omar MHAIMDAT",
+        "location":"Casablanca, Morocco",
+        "profile_pic_url":"https://pbs.twimg.com/profile_images/1271521722945110016/AvKfKpLo_normal.jpg",
+        "favorite_count":0,
+        "retweet_count":0,
+        "reply_count":0,
+        "quote_count":0,
+        "views":35
+    },
+    {
+        "tweet_id":"1681795360748892161",
+        "creation_date":"Wed Jul 19 22:37:14 +0000 2023",
+        "text":"RT @lvwerra: Did you know that you can train all Llama-2 models on your own data in just a few lines? The script even works with the 70B m…",
+        "user_id":"96479162",
+        "username":"omarmhaimdat",
+        "name":"Omar MHAIMDAT",
+        "favorite_count":0,
+        "retweet_count":281,
+        "reply_count":0,
+        "quote_count":0,
+        "retweet":true,
+        "views":null
+    }
+]

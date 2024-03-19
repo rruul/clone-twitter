@@ -5,6 +5,7 @@
       app
       left
       permanent
+      width="300"
     >
       <v-list-item
         v-for="opcion in opcionesMenu"
@@ -29,11 +30,16 @@
         </v-btn>
       </v-row>
     </v-navigation-drawer>
-    <Nuxt />
+    <v-main>
+      <Nuxt />
+      <TweetComponent :tweets="tweetsFromApi" />
+    </v-main>
     <v-navigation-drawer
       absolute
       right
       permanent
+      width="300"
+      app
     >
       <v-row align="center" justify="center" class="pa-2 ma-2">
         <v-text-field
@@ -42,7 +48,8 @@
           rounded
           hide-details
           prepend-inner-icon="mdi-magnify"
-          aria-placeholder="Search Twitter"
+          placeholder="Search Twitter"
+          @keyup.enter="buscar"
         />
       </v-row>
       <v-row align="center" justify="center">
@@ -56,7 +63,12 @@
 </template>
 
 <script>
+import TweetComponent from '@/components/twitter/ui-tweets.vue'
+import { usuario } from '@/assets/api/api.js'
 export default {
+  components: {
+    TweetComponent
+  },
   data () {
     return {
       opcionesMenu: [
@@ -69,7 +81,21 @@ export default {
         { titulo: 'Lists', icon: require('@/assets/icons/lists.svg'), path: '/lists' },
         { titulo: 'Profile', icon: require('@/assets/icons/profile.svg'), path: '/profile' },
         { titulo: 'More', icon: require('@/assets/icons/more.svg'), path: '/more' }
-      ]
+      ],
+      searchTwitter: '',
+      tweetsFromApi: []
+    }
+  },
+  methods: {
+    async buscar () {
+      if (this.searchTwitter.trim() !== '') {
+        try {
+          this.tweetsFromApi = await usuario(this.searchTwitter)
+          console.log(this.tweetsFromApi)
+        } catch (error) {
+          console.log(error)
+        }
+      }
     }
   }
 }
