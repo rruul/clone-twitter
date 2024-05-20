@@ -31,6 +31,12 @@
               </span>
             </v-text>
           </v-row>
+          <v-row style="width: 50%; align-items: center; align-content: center; justify-content: center;">
+            <v-img v-if="Array.isArray(item.media_url) && item.media_url.length"
+              :src="item.media_url[0]"
+              style="border-radius: 15%;"
+            />
+          </v-row>
           <v-row>
             <v-col cols="1">
               <v-img :src="require('@/assets/icons/message.svg')" class="iconos" />
